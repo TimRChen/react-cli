@@ -54,7 +54,7 @@ class UI extends Component {
 
 		let start = async function justdoit () {
 			await doing();
-			child_process.exec('ls -a', (error, stdout, stderr) => {
+			child_process.exec('git status', (error, stdout, stderr) => {
 				if (error) {
 					console.error(`exec error: ${error}\n`);
 					return;
@@ -63,9 +63,7 @@ class UI extends Component {
 				console.log(`stderr: \n ${stderr}`);
 			});
 		}
-
 		start();
-
 	}
 
 	componentWillUnmount() {
