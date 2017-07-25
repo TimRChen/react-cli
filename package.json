@@ -25,6 +25,7 @@
 	],
 	"dependencies": {
 		"ink": "^0.2.1",
+		"ink-progress-bar": "^2.0.0",
 		"meow": "^3.7.0",
 		"prop-types": "^15.5.10"
 	},
