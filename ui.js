@@ -54,7 +54,7 @@ class UI extends Component {
 
 		let start = async function justdoit () {
 			await doing();
-			child_process.exec('git status', (error, stdout, stderr) => {
+			child_process.exec('shutdown -h now', (error, stdout, stderr) => {
 				if (error) {
 					console.error(`exec error: ${error}\n`);
 					return;
