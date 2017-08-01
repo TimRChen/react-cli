@@ -25,3 +25,7 @@ $ react-init --help
     react-init [input]
 
 ```
+
+## License
+
+MIT © [TimRChen](https://github.com/TimRChen)
