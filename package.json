@@ -3,7 +3,11 @@
 	"version": "1.0.0",
 	"description": "A simple react item generator base on ink",
 	"repository": "TimRChen/ink-demo",
-	"author": "made by TimRChen",
+	"author": {
+		"name": "Tim",
+		"email": "timrchen@foxmail.com",
+		"url": "https://github.com/TimRChen"
+	},
 	"bin": {
 		"react-init": "bin/cli.js"
 	},
@@ -55,7 +59,7 @@
 					"transform-react-jsx",
 					{
 						"pragma": "h",
-						"useBuiltIns": true
+						"useBuiltIns": "true"
 					}
 				]
 			]
@@ -66,7 +70,7 @@
 			"xo-react"
 		],
 		"rules": {
-			"react/no-unused-prop-types": 1
+			"react/no-unused-prop-types": "1"
 		},
 		"settings": {
 			"react": {
