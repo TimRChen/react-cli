@@ -1,46 +1,29 @@
-# ink-demo [![Build Status](https://travis-ci.org/TimRChen/ink-demo.svg?branch=master)](https://travis-ci.org/TimRChen/ink-demo)
-
-
-## 声明
-
-
-*	此代码不要轻易执行
-* 此代码适合在linux类系统环境下执行
-* 执行前，保证 `node` 版本大于 4.x
-* 执行前，保证在超级管理员权限下
-* 最后一条，执行前，请务必读一遍代码了解情况再执行！！！
-* 本人已做声明，造成任何损失，均与我无关
+# react-cli [![Build Status](https://travis-ci.org/TimRChen/react-cli.svg?branch=master)](https://travis-ci.org/TimRChen/react-cli)
 
 
 ## Install
 
 ```
-$ npm install --global ink-demo
+$ npm install -g reactjs-hotload-cli
 ```
 
-## Run
+## How to create a react-webpack item
 ```
-$ su
+$ react-init
 ```
 ```
-$ node cli.js
+$ npm install
 ```
-
+```
+$ npm run dev
+```
 
 ## Usage
 
 ```js
-$ ink-demo --help
+$ react-init --help
 
   Usage
-    ink-demo [input]
+    react-init [input]
 
-  Options
-    --name  Lorem ipsum [Default: false]
-
-  Examples
-    $ ink-demo
-    I love Ink
-    $ ink-demo --name=ponies
-    I love ponies
 ```
