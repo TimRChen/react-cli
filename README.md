@@ -4,17 +4,15 @@
 ## Install
 
 ```
-$ npm install -g reactjs-hotload-cli
+$ npm install -g reactjs-generator-cli
 ```
 
-## How to create a react-webpack item
+## Create a react-webpack item
 ```
 $ react-init
-```
-```
+
 $ npm install
-```
-```
+
 $ npm run dev
 ```
 
