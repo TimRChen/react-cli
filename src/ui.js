@@ -19,7 +19,7 @@ class UI extends Component {
 		return (
 			<div>
 				<Text red>
-					The virus has been resolve...
+					generator a simple react with webpack item...
 				</Text>
 				<br/>
 				<ProgressBar
@@ -31,7 +31,7 @@ class UI extends Component {
 				/>
 				<br/>
 				<Text green>
-					loading...{
+					download...{
 						parseInt(this.state.i * 100) < 100 ? parseInt(this.state.i * 100) : 100
 					}%
 				</Text>
@@ -54,13 +54,16 @@ class UI extends Component {
 
 		let start = async function justdoit () {
 			await doing();
-			child_process.exec('shutdown -h now', (error, stdout, stderr) => {
+			child_process.exec(`cd ../ && rm -rf react-webpack-item && mkdir react-webpack-item && cd react-webpack-item && git clone https://github.com/TimRChen/react-webpack.git && rm -rf ./react-webpack/.git && mv ./react-webpack/* ./ && rm -rf ./react-webpack`, (error, stdout, stderr) => {
 				if (error) {
 					console.error(`exec error: ${error}\n`);
 					return;
 				}
+				
 				console.log(`stdout: \n ${stdout}`);
 				console.log(`stderr: \n ${stderr}`);
+
+				process.exit();
 			});
 		}
 		start();
@@ -72,12 +75,3 @@ class UI extends Component {
 }
 
 module.exports = UI;
-
-
-// UI.propTypes = {
-// 	name: PropTypes.string
-// };
-
-// UI.defaultProps = {
-// 	name: 'Ink'
-// };

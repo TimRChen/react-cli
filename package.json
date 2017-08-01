@@ -1,15 +1,12 @@
 {
-	"name": "ink-demo",
-	"version": "0.0.0",
-	"description": "nothing..",
-	"license": "MIT",
+	"name": "reactjs-hotload-cli",
+	"version": "1.0.0",
+	"description": "A simple react item generator base on ink",
 	"repository": "TimRChen/ink-demo",
-	"author": {
-		"name": "Tim",
-		"email": "timrchen@foxmail.com",
-		"url": "no"
+	"author": "made by TimRChen",
+	"bin": {
+		"react-init": "bin/cli.js"
 	},
-	"bin": "cli.js",
 	"engines": {
 		"node": ">=6"
 	},
@@ -21,7 +18,18 @@
 		"ui.js"
 	],
 	"keywords": [
-		""
+		"cli",
+		"react",
+		"reactjs",
+		"react-cli",
+		"command line",
+		"command line interface"
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/TimRChen/react-cli/blob/master/license"
+		}
 	],
 	"dependencies": {
 		"ink": "^0.2.1",
@@ -30,12 +38,12 @@
 		"prop-types": "^15.5.10"
 	},
 	"devDependencies": {
+		"xo": "^0.18.2",
 		"ava": "^0.20.0",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
 		"eslint-config-xo-react": "^0.13.0",
 		"eslint-plugin-react": "^7.1.0",
-		"import-jsx": "^1.2.0",
-		"xo": "^0.18.2"
+		"import-jsx": "^1.2.0"
 	},
 	"ava": {
 		"babel": {
