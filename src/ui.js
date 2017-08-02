@@ -4,7 +4,9 @@ const {h, Component, Text} = require('ink');
 const PropTypes = require('prop-types');
 const ProgressBar = require('ink-progress-bar');
 let child_process = require('child_process');
+let argv = process.argv;
 
+console.log(`the folder' name is: ${argv[2]}`);
 
 class UI extends Component {
 	constructor() {
@@ -54,7 +56,7 @@ class UI extends Component {
 
 		let start = async function justdoit () {
 			await doing();
-			child_process.exec(`rm -rf react-webpack-item && mkdir react-webpack-item && cd react-webpack-item && git clone https://github.com/TimRChen/react-webpack.git && rm -rf ./react-webpack/.git && mv ./react-webpack/* ./react-webpack/.[^.]* ./ && rm -rf ./react-webpack && npm link`, (error, stdout, stderr) => {
+			child_process.exec(`rm -rf ${argv[2]} && mkdir ${argv[2]} && cd ${argv[2]} && git clone https://github.com/TimRChen/react-webpack.git && rm -rf ./react-webpack/.git && mv ./react-webpack/* ./react-webpack/.[^.]* ./ && rm -rf ./react-webpack`, (error, stdout, stderr) => {
 				if (error) {
 					console.error(`exec error: ${error}\n`);
 					return;

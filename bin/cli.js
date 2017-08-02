@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 
-process.bin = 'react';
+process.bin = 'react-init';
 
 const importJsx = require('import-jsx');
 const {h, render} = require('ink');
@@ -11,7 +11,7 @@ const Ui = importJsx('../src/ui');
 
 const cli = meow(`
 	Usage
-	  $ react [diractory]
+	  $ react-init <project-name>
 
 `);
 
