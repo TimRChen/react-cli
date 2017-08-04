@@ -1,8 +1,8 @@
 {
 	"name": "reactjs-generator-cli",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "A simple react item generator base on ink",
-	"repository": "TimRChen/ink-demo",
+	"repository": "TimRChen/react-cli",
 	"author": {
 		"name": "Tim",
 		"email": "timrchen@foxmail.com",
