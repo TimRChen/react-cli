@@ -1,6 +1,6 @@
 {
 	"name": "reactjs-generator-cli",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A simple react item generator base on ink",
 	"repository": "TimRChen/react-cli",
 	"author": {
@@ -13,7 +13,7 @@
 	},
 	"main": "bin/cli.js",
 	"engines": {
-		"node": ">=6"
+		"node": ">=8"
 	},
 	"scripts": {
 		"test": "xo && ava"

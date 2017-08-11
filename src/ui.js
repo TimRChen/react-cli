@@ -20,7 +20,7 @@ class UI extends Component {
 	render() {
 		return (
 			<div>
-				<Text red>
+				<Text>
 					generator a simple react with webpack item...
 				</Text>
 				<br/>
@@ -43,7 +43,7 @@ class UI extends Component {
 
 	componentDidMount() {
 		let _self = this;
-		function doing () {
+		function loading () {
 			return new Promise(function (resolve, reject) {
 				_self.timer = setInterval(() => {
 					_self.setState({
@@ -54,8 +54,8 @@ class UI extends Component {
 			})
 		}
 
-		let start = async function justdoit () {
-			await doing();
+		let start = async function () {
+			await loading();
 			child_process.exec(
 				'rm -rf' + ` ${argv[2]} `
 				+ '&& mkdir' + ` ${argv[2]} `
